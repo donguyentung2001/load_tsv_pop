@@ -2,9 +2,8 @@ import sys
 import csv
 
 input_file = sys.argv[1]
-column_name = sys.argv[2] 
-value = sys.argv[3]
-output_file = sys.argv[4]
+value = sys.argv[2]
+output_file = sys.argv[3]
 
 tsv_file = open(input_file)
 output = [] 
@@ -17,7 +16,7 @@ with open(input_file) as fd:
         #if count > 10: 
         #    break 
         if col_index is None: 
-            col_index = row.index(column_name)
+            col_index = row.index("Population name")
         else: 
             if row[col_index] == value:
                 output.append(row[0])
