@@ -11,7 +11,11 @@ output = []
 with open(input_file) as fd:
     rd = csv.reader(fd, delimiter="\t", quotechar='"')
     col_index  = None 
+    count = 0
     for row in rd:
+        count +=1 
+        if count > 10: 
+            break 
         #if col_index is None: 
         #    col_index = row.index(column_name)
         #else: 
