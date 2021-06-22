@@ -1,9 +1,12 @@
 HOW TO RUN:
 
 First command argument is load_tsv_script.py. 
-Second command argument is the file 
-Third command argument is the population code 
-Forth command argument is the output file
+
+Second command argument is the .tsv file we want to read.
+
+Third command argument is the population code.
+
+Forth command argument is the output file.
 
 For example, to get all the individuals for GBR population, run: 
 
