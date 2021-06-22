@@ -16,7 +16,7 @@ with open(input_file) as fd:
         #if count > 10: 
         #    break 
         if col_index is None: 
-            col_index = row.index("Population name")
+            col_index = row.index("Population code")
             print("row index is ", col_index)
         else: 
             if row[col_index] == value:
