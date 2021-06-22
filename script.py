@@ -13,15 +13,14 @@ with open(input_file) as fd:
     col_index  = None 
     count = 0
     for row in rd:
-        count +=1 
-        if count > 10: 
-            break 
-        #if col_index is None: 
-        #    col_index = row.index(column_name)
-        #else: 
-        #    if row[col_index] == value:
-        #        output.append(row[0])
-        print(row)
+        #count +=1 
+        #if count > 10: 
+        #    break 
+        if col_index is None: 
+            col_index = row.index(column_name)
+        else: 
+            if row[col_index] == value:
+                output.append(row[0])
 tsv_file.close() 
 
 f= open(output_file,"w+")
