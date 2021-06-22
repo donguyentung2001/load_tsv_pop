@@ -17,9 +17,12 @@ with open(input_file) as fd:
         #    break 
         if col_index is None: 
             col_index = row.index("Population name")
+            print("row index is ", col_index)
         else: 
             if row[col_index] == value:
                 output.append(row[0])
+                print("getting row")
+print(output)
 tsv_file.close() 
 
 f= open(output_file,"w+")
