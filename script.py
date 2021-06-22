@@ -12,16 +12,11 @@ with open(input_file) as fd:
     col_index  = None 
     count = 0
     for row in rd:
-        #count +=1 
-        #if count > 10: 
-        #    break 
         if col_index is None: 
             col_index = row.index("Population code")
-            print("row index is ", col_index)
         else: 
             if row[col_index] == value:
                 output.append(row[0])
-                print("getting row")
 print(output)
 tsv_file.close() 
 
